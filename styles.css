@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar {
+  height: 60px;
+  background-color: black;
+  color: black;
+  position: relative;
+}
+
+.brand {
+  font-size: 32px;
+  font-weight: 200px;
+  user-select: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: orange;
+}
+
+.desktop_menu {
+position: absolute;
+right: 40px;
+top: 5px;
+}
+
+.btn_menu {
+  border: none;
+  outline: none;
+  background-color:black;
+  color: orange;
+  font-weight: 200px;
+  padding: 5px 12px;
+  transition-duration: 500ms;
+}
+/* hover tanpa klik/focus harus diklik */
+.btn_menu:focus {
+  background-color: aliceblue;
+  border-radius: 100px;
+  color: black;
+}
+
+.hero{
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  position: relative;
+  transition-duration: 1000ms;
+
+}
+.hero:hover {
+  background-image: url('https://images.pexels.com/photos/3960212/pexels-photo-3960212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+}
+
+.hero_title {
+position: absolute;
+color: orange;
+font-size: 32px;
+left: 40px;
+font-weight: 300;
+}
+/* css turunan selektor = tag yang ada di dalam div dapat dirubah
+div p {
+  background-color: aqua;
+} */
+
+/* css turunan selektor langsung = anak kandung
+div > p {
+  background-color: aqua;
+} */
+
+/* css turunan = tag sesudah tag div
+div + p {
+  background-color: aqua;
+} */
+/* css turunan sesudah tag div,tanpa halangan tag lain
+div ~ p {
+  background-color: aqua;
+} */
+/* struktur code id:properti */
+.title:hover {
+  color: red;
+  cursor: crosshair;
+
+}
+/* struktur class id */
+.banner {
+  background-image: url('https://images.pexels.com/photos/310452/pexels-photo-310452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=900&dpr=1');
+  /* width: 1200px; */
+  height: 200px;
+  background-size: cover;
+  transition-duration: 1400ms;
+}
+/* struktur class:properti */
+/* merubah visual hover */
+.banner:hover {
+  background-image: url('https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
